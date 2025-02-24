@@ -14,8 +14,10 @@ const pi = 3.14159
 let age = 15
 
 // 5. A list of colors that should remain the same throughout the program.
-const listOfColors = ["red", "blue","yellow","white","black"]
 
+const listOfColors = ["red", "blue","yellow","white","black"]
+// -> I assume you were confused because of the word "list." I didn't mean to create an array (List in Java) here.
+// -> You just needed to declare a few variables like: const red = "#FF0000";
 // Write your answers in JavaScript:
 
 
@@ -110,3 +112,5 @@ console.log(typeof Boolean(spaceString));
 const emptyValue = null;
 console.log(String(emptyValue));
 console.log(typeof String(emptyValue));
+
+// Good job !!!
