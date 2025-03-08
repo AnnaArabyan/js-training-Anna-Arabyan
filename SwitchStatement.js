@@ -15,6 +15,7 @@
 //  9. Display the result of the calculation.
 // 10. If the user enters an invalid operator, show an error message.
 // Write your code here:
+
 // const { userInput } = require("./UserInput");
 // const firstNum = userInput("Please, enter a number ");
 // const action = userInput("Please, enter an operator (+, -, *, /) ");
@@ -114,7 +115,7 @@
 //  3. If the user enters a non-numeric value, print "Please enter a valid age."
 // Write your code here:
 
-// const { userInput } = require("./UserInput");
+const { userInput } = require("./UserInput");
 // const userAge = userInput("Please, enter your age ");
 // console.log(userAge);
 // let age = Number(userAge);
