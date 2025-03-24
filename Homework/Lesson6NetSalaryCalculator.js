@@ -68,8 +68,18 @@ function stampDutyCalculation(grossSalary) {
   } else stampDutyTax = 15000;
   return stampDutyTax;
 }
+// The breakdown into seperate functions is good approach
+// But you are not verifying the validation for input number in this way
+// You should do the validation inside of the main function 
+// Or at least call your 'salaryCalculation' function in your main function
+// The correct solution here would be 
+
+
 
 function netSalaryCalculation(grossSalary) {
+    if (grossSalary === "Invalid input") {
+    return grossSalary;  // Return "Invalid input" if the input is invalid
+  }
   let incomeTax = incomeTaxCalculation(grossSalary);
   let socialSecurity = SocialSecurityContributionCalculation(grossSalary);
   let stampDuty = stampDutyCalculation(grossSalary);
