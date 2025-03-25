@@ -16,5 +16,8 @@
     "url": "https://github.com/AnnaArabyan/js-training-Anna-Arabyan/issues"
   },
   "homepage": "https://github.com/AnnaArabyan/js-training-Anna-Arabyan#readme",
-  "description": ""
+  "description": "",
+  "dependencies": {
+    "readline-sync": "^1.4.10"
+  }
 }

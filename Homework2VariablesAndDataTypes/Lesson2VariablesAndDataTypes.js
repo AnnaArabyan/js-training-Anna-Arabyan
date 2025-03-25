@@ -108,5 +108,7 @@ console.log(typeof Boolean(spaceString));
 
 // Convert the following null value to a string and log the result:
 const emptyValue = null;
-console.log(String(emptyValue));
+String(emptyValue)
+console.log(typeof emptyValue);
 console.log(typeof String(emptyValue));
+

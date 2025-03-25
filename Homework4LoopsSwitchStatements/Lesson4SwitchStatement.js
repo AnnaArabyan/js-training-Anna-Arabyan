@@ -115,7 +115,7 @@
 //  3. If the user enters a non-numeric value, print "Please enter a valid age."
 // Write your code here:
 
-const { userInput } = require("./UserInput");
+const { userInput } = require("../UserInput");
 // const userAge = userInput("Please, enter your age ");
 // console.log(userAge);
 // let age = Number(userAge);

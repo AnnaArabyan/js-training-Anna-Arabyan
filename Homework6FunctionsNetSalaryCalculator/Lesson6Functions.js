@@ -34,5 +34,5 @@ function priceCalculation(amount, discount = 0) {
 let finalPrice1 = priceCalculation(1000);
 console.log(finalPrice1);
 
-let finalPrice2 = priceCalculation(1000, 10);
+let finalPrice2 = priceCalculation(48, 10);
 console.log(finalPrice2);

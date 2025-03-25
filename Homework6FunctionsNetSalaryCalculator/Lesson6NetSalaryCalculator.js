@@ -69,13 +69,30 @@ function stampDutyCalculation(grossSalary) {
   return stampDutyTax;
 }
 
-function netSalaryCalculation(grossSalary) {
-  let incomeTax = incomeTaxCalculation(grossSalary);
-  let socialSecurity = SocialSecurityContributionCalculation(grossSalary);
-  let stampDuty = stampDutyCalculation(grossSalary);
-  return grossSalary - incomeTax - socialSecurity - stampDuty;
-}
+// function netSalaryCalculation(grossSalary) {
+//   if (grossSalary === "Invalid input") {
+//     return grossSalary;  // Return "Invalid input" if the input is invalid
+//   }
+//   let incomeTax = incomeTaxCalculation(grossSalary);
+//   let socialSecurity = SocialSecurityContributionCalculation(grossSalary);
+//   let stampDuty = stampDutyCalculation(grossSalary);
+//   return grossSalary - incomeTax - socialSecurity - stampDuty;
+// }
 
+// let grossSalary = salaryCalculation(1000000);
+// let netSalary = netSalaryCalculation(grossSalary);
+// console.log(`The employee's monthly salary is ${netSalary} AMD`);
+
+
+function netSalaryCalculation(grossSalary) {
+  if (grossSalary === "Invalid input") {
+  return grossSalary;  // Return "Invalid input" if the input is invalid
+}
+let incomeTax = incomeTaxCalculation(grossSalary);
+let socialSecurity = SocialSecurityContributionCalculation(grossSalary);
+let stampDuty = stampDutyCalculation(grossSalary);
+return grossSalary - incomeTax - socialSecurity - stampDuty;
+}
 let grossSalary = salaryCalculation(1000000);
 let netSalary = netSalaryCalculation(grossSalary);
 console.log(`The employee's monthly salary is ${netSalary} AMD`);
