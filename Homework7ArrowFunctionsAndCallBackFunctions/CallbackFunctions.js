@@ -26,7 +26,9 @@ const password = userInput("Please, enter a password ");
 function credentialsCheck(username, password, callback) {
   let username1 = "Anna";
   let password1 = "1234";
-  username === username1 && password === password1 ? callback(validResultMessage) : callback(invalidResultMessage);
+  username === username1 && password === password1
+    ? callback(validResultMessage)
+    : callback(invalidResultMessage);
 }
 
 function validResultMessage() {
@@ -52,18 +54,17 @@ const { userInput } = require("../UserInput");
 const number = userInput("Please, enter a number ");
 let inputNum = +number;
 
-function validateInput(inputNum) {
-    return isNaN(inputNum) || inputNum <= 0 ? "Invalid input, Please enter a number" : inputNum;
+if (isNaN(inputNum)) {
+  console.log("Invalid input. Please enter a valid number.");
+} else {
+  function sumNumbersUpTo(n, callback) {
+    let sum = 0;
+    for (let i = 1; i < n; i++) {
+      sum += i;
+    }
+    callback(sum);
   }
-
-function sumNumbersUpTo(n, callback) {
-  let sum = 0;
-  for (let i = 1; i < n; i++) {
-    sum += i;
-  }
-  callback(sum);
+  sumNumbersUpTo(inputNum, function (result) {
+    console.log(`The sum of numbers from 1 to ${inputNum} is ${result}`);
+  });
 }
-sumNumbersUpTo(inputNum, function (result) {
-  console.log(`The sum of the digits of the number ${inputNum} is ${result}`);
-});
-
