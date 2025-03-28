@@ -59,7 +59,7 @@ if (isNaN(inputNum)) {
 } else {
   function sumNumbersUpTo(n, callback) {
     let sum = 0;
-    for (let i = 1; i < n; i++) {
+    for (let i = 1; i < n; i++) { // The loop condition should be i <= n instead of i < n. With i < n, the number n is excluded from the sum.
       sum += i;
     }
     callback(sum);
