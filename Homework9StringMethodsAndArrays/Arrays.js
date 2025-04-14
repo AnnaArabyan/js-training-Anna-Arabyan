@@ -71,6 +71,8 @@ function getFirstGreaterThanTen(arr) {
   }
   throw new Error("No element greater than 10 found.");
 }
-
+// The requirement says:
+// "If no elements are greater than 10, return undefined"
+// But your function throws an error instead.
 getFirstGreaterThanTen(myArray2);
 //getFirstGreaterThanTen(myArray3);
