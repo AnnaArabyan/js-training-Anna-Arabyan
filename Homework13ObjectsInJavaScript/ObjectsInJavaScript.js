@@ -23,6 +23,17 @@ let shoppingCart = {
     this.cart.shift();
     return this.cart;
   },
+//   removeItem(item) is not implemented correctly.
+// Your current code uses this.cart.shift(); which removes the first item, not the first occurrence of a specific item.
+// Requirement is: remove the first occurrence of a specific item (e.g., using indexOf and splice).
+  // The correct code is
+removeItem(item) {
+  const index = this.cart.indexOf(item);
+  if (index !== -1) {
+    this.cart.splice(index, 1);
+  }
+  return this.cart;
+}
 
   clearCart() {
     this.cart = [];
